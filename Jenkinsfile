@@ -38,8 +38,8 @@ pipeline {
                     . ${BUILD_TAG}/bin/activate && \
                     ${BUILD_TAG}/bin/pip install --upgrade pip && \
                     ${BUILD_TAG}/bin/pip install -r requirements.txt && \
-                    python manage.py makemigrations && python manage.py migrate && \
-                    python manage.py shell --command "import seeder;seeder.seed_all(14)" && deactivate'
+                    py manage.py makemigrations && py manage.py migrate && \
+                    py manage.py shell --command "import seeder;seeder.seed_all(14)" && deactivate'
             }
 
 

@@ -35,12 +35,7 @@ pipeline {
             steps {
                 echo "Build number ${BUILD_NUMBER} and ${BUILD_TAG}"
 
-                bat 'py -m venv "${BUILD_TAG}" && \
-                    . ${BUILD_TAG}/bin/activate && \
-                    ${BUILD_TAG}/bin/py pip install --upgrade pip && \
-                    ${BUILD_TAG}/bin/py pip install -r requirements.txt && \
-                    py manage.py makemigrations && py manage.py migrate && \
-                    py manage.py shell --command "import seeder;seeder.seed_all(14)" && deactivate'
+                bat 'mvn compile'
             }
 
 

@@ -35,7 +35,7 @@ pipeline {
             steps {
                 echo "Build number ${BUILD_NUMBER} and ${BUILD_TAG}"
 
-                bat 'mvn compile'
+                bat 'py mvn compile'
             }
 
 

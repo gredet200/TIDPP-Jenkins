@@ -35,7 +35,7 @@ pipeline {
            steps {
                 echo "Build number ${BUILD_NUMBER} and ${BUILD_TAG}"
 
-                bat '.\mvnw clean compile'
+                bat 'mvnw clean compile'
             }
 
 

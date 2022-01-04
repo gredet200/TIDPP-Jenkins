@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\accounts",
+    "\\accounts\\migrations",
+    "\\accounts\\templates",
+    "\\accounts\\templates\\accounts"
+  ],
+  "SelectedNode": "\\accounts\\__init__.py",
+  "PreviewInSolutionExplorer": false
+}
